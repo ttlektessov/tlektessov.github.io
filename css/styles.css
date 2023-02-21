@@ -1,0 +1,54 @@
+/*************TAG SELECTOR******************/
+body {
+    background-color:#F9F5E7;
+}
+
+hr {
+    border-style: none;
+    border-top: dotted grey;
+    border-width: 5px;
+    width: 5%;
+}
+
+h1, h2 {
+    color: #B97A95;
+    font-family: "Courier New";
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+td {
+    text-align: center;
+    width: 150px;
+}
+
+/*************CLASS SELECTORS******************/
+/* can use class in more than 1 element and multiple classes in
+one element*/
+.bacon {
+    background-color: green;
+}
+
+.broccoli {
+    background-color: red;
+}
+.circular {
+    border-radius: 100px;
+}
+
+img:hover{
+    background-color: #B97A95;
+}
+
+/*************ID SELECTORS******************/
+/* can't use ids in more than 1 element and multiple ids in
+one element*/
+#heading {
+    color: blue;
+}
