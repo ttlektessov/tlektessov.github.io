@@ -198,7 +198,10 @@ section {
   font-size: 3rem;
   text-align: center;
 }
-
+.subtitle{
+  font-size: 2rem;
+  text-align: center;
+}
 #socials-container {
   display: flex;
   justify-content: center;
