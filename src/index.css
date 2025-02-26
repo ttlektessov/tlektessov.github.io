@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+}
+body {
+  --font-display: Poppins, sans-serif;
+}
+section {
+  @apply box-border min-h-fit pt-[4vh] m-[0_10rem] h-[96vh];
+}
+a:hover {
+  @apply text-gray-600 decoration-gray-600 underline underline-offset-[1rem];
+}
+
+a,
+button {
+  @apply transition delay-150 duration-300;
+}
+
+p {
+  @apply text-[#555555];
+}
+
+button {
+  @apply font-semibold p-4 w-[9rem] rounded-[2rem];
+}
+
+button:hover {
+  @apply cursor-pointer;
+}
+.icon {
+  @apply w-[2rem] h-[2rem] inline;
+}
+
+.profile-section {
+  @apply h-[80vh] gap-[5rem] flex justify-center;
+}
+
+.details-container {
+  @apply justify-center p-[1.5rem] flex-1 bg-white rounded-[2rem] border-[0.1rem] decoration-gray-600 border-[rgb(163,163,163)] text-center;
+}
