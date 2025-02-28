@@ -18,9 +18,10 @@ button {
 }
 
 p {
-  @apply text-[#555555];
+  @apply text-[#555555] font-medium;
 }
 
+a,
 button {
   @apply font-semibold p-4 w-[9rem] rounded-[2rem];
 }
@@ -35,7 +36,9 @@ button:hover {
 .profile-section {
   @apply h-[80vh] gap-[5rem] flex justify-center;
 }
-
+.contact-me-section {
+  @apply h-[80vh] flex flex-col justify-center;
+}
 .details-container {
   @apply justify-center p-[1.5rem] flex-1 bg-white rounded-[2rem] border-[0.1rem] decoration-gray-600 border-[rgb(163,163,163)] text-center;
 }

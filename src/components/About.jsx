@@ -8,22 +8,23 @@ export default function About() {
     <section id="about" className="py-10 relative flex-col">
       <h1 className="text-[3rem] text-center font-bold">About Me</h1>
       <div className="flex h-[80%] gap-[4rem]">
-        <div className="m-[auto_0] flex-shrink-0 h-[400px] w-[400px]">
+        <div className="m-[auto_0]  h-[400px] w-[400px]">
           <img
             src={aboutPic}
             alt="Profile picture"
             className="rounded-3xl shadow-lg object-cover"
           />
         </div>
-        <div className="flex justify-center flex-col">
+        <div className="flex flex-1 justify-center flex-col">
           <div className="flex gap-[2rem] mb-[2rem]">
             <div className="details-container">
               <img src={experiencePng} alt="Experience icon" className="icon" />
               <h3 className="text-2xl">Experience</h3>
               <p>
-                2 years in
+                1.5 years in
                 <br />
-                Frontend Software Development & Flutter Mobile Development
+                Frontend Software Development &<br />
+                Flutter Mobile Development
               </p>
             </div>
             <div className="details-container">
@@ -33,8 +34,9 @@ export default function About() {
               <p>
                 B.Sc. Bachelors Degree in
                 <br />
-                Computer Science & Engineering, Double Major in International
-                Studies
+                Computer Science & Engineering
+                <br />
+                Double Major in International Studies
               </p>
             </div>
           </div>
@@ -43,14 +45,16 @@ export default function About() {
               I'm Tim, a recent grad with a degree in Computer Science &
               Engineering and International Studies from Korea University. My
               journey has been a blend of technology and global perspectives. At
-              NODAMEN, our team developed dynamic admin pages and enhanced
-              application features through robust Flutter development and
-              responsive web design. Upholding user-centric values, I've
-              contributed to seamless integrations and collaborated with UX/UI
-              designers for cross-device compatibility. My goal is to
-              continually expand my expertise in front-end development,
-              leveraging a collaborative approach to drive innovation and create
-              impactful user experiences.
+              NODAMEN, I was responsible for the development, optimization, and
+              bug fixing of web services as a Frontend Developer. These web
+              services showcased digital exhibitions curated by staff, allowing
+              users to enjoy 4K digital artworks on PCs, mobile devices, and
+              TVs. I was also a Flutter developer responsible for developing web
+              admin page for the content curation on mobile application, as well
+              as development, optimizing & bug fixing of the mobile application.
+              My goal is to continually expand my abilities in front-end
+              development and create impactful user experiences. You can see the
+              projects I've worked on in the "Projects" section!
             </p>
           </div>
         </div>

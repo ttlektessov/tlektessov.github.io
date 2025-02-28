@@ -6,13 +6,13 @@ import githubIcon from "../assets/github.png";
 
 export default function Profile() {
   return (
-    <section id="profile" className="profile-section">
+    <section id="profile" className="profile-section ">
       <div className="w-[400px] h-[400px] my-auto mx-0">
         <img src={profilePic} alt="Temirlan Tlektessov profile picture" />
       </div>
       <div className="self-center text-center">
         <p className="font-semibold">Hey there, I'm</p>
-        <h1 className="title text-[3rem] font-bold">Temirlan Tlektessov</h1>
+        <h1 className="text-[3rem] font-bold">Temirlan Tlektessov</h1>
         <p className="text-[1.75rem] font-bold mb-[1rem]">
           Frontend Software Engineer
         </p>
