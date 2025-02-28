@@ -16,8 +16,8 @@ My personal portfolio website built using React, Vite, and Tailwind CSS.
 To get started with this project, clone the repository and install the dependencies:
 
 ```sh
-git clone https://github.com/tlektessov/tlektessov.github.io.git
-cd tlektessov.github.io
+git clone https://github.com/tlektessov/tlektessov
+cd tlektessov
 npm install
 ```
 
@@ -46,7 +46,7 @@ npm run preview
 ## Project Structure
 
 ```filetree
-tlektessov.github.io
+tlektessov
 ├── public
 │   ├── favicon.ico
 │   └── index.html
