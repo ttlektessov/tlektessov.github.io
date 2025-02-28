@@ -3,7 +3,11 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav className="flex justify-around items-center p-4 bg-white shadow-md h-[17vh]">
-      <div className="text-4xl font-normal">Temirlan Tlektessov</div>
+      <div className="text-4xl font-normal">
+        Temirlan Tlektessov
+        <span className="text-xs">mobile version in development</span>
+      </div>
+
       <ul className="flex gap-[2rem] text-2xl font-normal">
         <li>
           <a
