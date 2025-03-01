@@ -13,7 +13,7 @@ function App() {
     return (
       <div className="flex items-center justify-center h-screen">
         <p className="text-center text-xl">
-          In development, check the portfolio from PC
+          In development, check the portfolio from PC <br /> TBU 02.03.2025
         </p>
       </div>
     );

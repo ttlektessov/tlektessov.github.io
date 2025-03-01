@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="flex justify-around items-center p-4 bg-white shadow-md h-[17vh]">
       <div className="text-4xl font-normal">
         Temirlan Tlektessov
-        <span className="text-xs">mobile version in development</span>
+        <span className="text-xs">TBU 02.03.2025</span>
       </div>
 
       <ul className="flex gap-[2rem] text-2xl font-normal">
