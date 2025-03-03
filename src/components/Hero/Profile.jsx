@@ -7,11 +7,11 @@ import githubIcon from "../../assets/github.png";
 export default function Profile() {
   return (
     <section id="profile" className="profile-section">
-      <div className="mx-0 my-auto h-[400px] w-[400px]">
+      <div className="bg-gray-default mx-0 my-auto h-[400px] w-[400px]">
         <img src={profilePic} alt="Temirlan Tlektessov profile picture" />
       </div>
       <div className="self-center text-center">
-        <p className="font-semibold">Hey there, I'm</p>
+        <p className="h2">Hey there, I'm</p>
         <h1 className="text-[3rem] font-bold">Temirlan Tlektessov</h1>
         <p className="mb-[1rem] text-[1.75rem] font-bold">
           Frontend Software Engineer

@@ -7,29 +7,28 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import useWindowSize from "./useWindowSize";
+import { useState, useEffect } from "react";
 function App() {
-  const { width } = useWindowSize();
-  if (width <= 600) {
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <p className="text-center text-xl">
-          In development, check the portfolio from PC <br /> TBU 02.03.2025
-        </p>
-      </div>
-    );
-  } else {
-    return (
-      <>
-        <Header />
-        <Profile />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
-      </>
-    );
+  const [darkMode, setDarkMode] = useState("dark");
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode === "dark");
+  }, []);
+  function toggleDarkMode() {
+    const newMode = darkMode === "dark" ? "light" : "dark";
+    setDarkMode(newMode);
+    document.documentElement.classList.toggle("dark", newMode === "dark");
   }
+  return (
+    <>
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Profile />
+      <About />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
