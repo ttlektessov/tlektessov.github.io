@@ -1,22 +1,22 @@
 import React from "react";
-import aboutPic from "../assets/about-pic.png";
-import experiencePng from "../assets/experience.png";
-import educationPng from "../assets/education.png";
-import arrowPng from "../assets/arrow.png";
+import aboutPic from "../../assets/about-pic.png";
+import experiencePng from "../../assets/experience.png";
+import educationPng from "../../assets/education.png";
+import arrowPng from "../../assets/arrow.png";
 export default function About() {
   return (
-    <section id="about" className="py-10 relative flex-col">
-      <h1 className="text-[3rem] text-center font-bold">About Me</h1>
+    <section id="about" className="relative flex-col py-10">
+      <h1 className="text-center text-[3rem] font-bold">About Me</h1>
       <div className="flex h-[80%] gap-[4rem]">
-        <div className="m-[auto_0]  h-[400px] w-[400px]">
+        <div className="m-[auto_0] h-[400px] w-[400px]">
           <img
             src={aboutPic}
             alt="Profile picture"
-            className="rounded-3xl shadow-lg object-cover"
+            className="rounded-3xl object-cover shadow-lg"
           />
         </div>
-        <div className="flex flex-1 justify-center flex-col">
-          <div className="flex gap-[2rem] mb-[2rem]">
+        <div className="flex flex-1 flex-col justify-center">
+          <div className="mb-[2rem] flex gap-[2rem]">
             <div className="details-container">
               <img src={experiencePng} alt="Experience icon" className="icon" />
               <h3 className="text-2xl">Experience</h3>
@@ -62,7 +62,7 @@ export default function About() {
       <img
         src={arrowPng}
         alt="Arrow icon"
-        className="icon arrow mt-8 cursor-pointer absolute bottom-[2.5rem] right-[-5rem] icon"
+        className="icon arrow icon absolute right-[-5rem] bottom-[2.5rem] mt-8 cursor-pointer"
         onClick={() => (window.location.href = "#experience")}
       />
     </section>

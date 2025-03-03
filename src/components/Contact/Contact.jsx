@@ -1,25 +1,25 @@
 import React from "react";
-import linkedinIcon from "../assets/linkedin.png";
-import emailIcon from "../assets/email.png";
+import linkedinIcon from "../../assets/linkedin.png";
+import emailIcon from "../../assets/email.png";
 export default function Contact() {
   return (
     <section id="contact" className="contact-me-section">
       <p className="text-center text-lg">Get in Touch</p>
-      <h1 className="text-[3rem] text-center font-bold">Contact Me</h1>
-      <div className="flex justify-center m-[2rem_auto] p-[0.5rem] rounded-4xl border-[#353535] border-solid border-[0.1rem]">
-        <div className="flex items-center justify-center gap-[0,5rem] m-[1rem] p-[1rem]">
-          <img src={emailIcon} alt="Email icon" className="h-10 w-10 mr-2" />
+      <h1 className="text-center text-[3rem] font-bold">Contact Me</h1>
+      <div className="m-[2rem_auto] flex justify-center rounded-4xl border-[0.1rem] border-solid border-[#353535] p-[0.5rem]">
+        <div className="m-[1rem] flex items-center justify-center gap-[0,5rem] p-[1rem]">
+          <img src={emailIcon} alt="Email icon" className="mr-2 h-10 w-10" />
           <p className="text-lg">
             <a href="mailto:ttlektessov@gmail.com" className="text-black">
               ttlektessov@gmail.com
             </a>
           </p>
         </div>
-        <div className="flex items-center justify-center gap-[0,5rem] m-[1rem] p-[1rem]">
+        <div className="m-[1rem] flex items-center justify-center gap-[0,5rem] p-[1rem]">
           <img
             src={linkedinIcon}
             alt="LinkedIn icon"
-            className="h-10 w-10 mr-2"
+            className="mr-2 h-10 w-10"
           />
           <p className="text-lg">
             <a

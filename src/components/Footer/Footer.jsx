@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="h-[26vh] m-[0_1rem]">
-      <nav className="flex justify-around align-center h-[17vh]">
+    <footer className="m-[0_1rem] h-[26vh]">
+      <nav className="align-center flex h-[17vh] justify-around">
         <div className="">
-          <ul className="flex gap-[2rem] style-none">
+          <ul className="style-none flex gap-[2rem]">
             <li>
               <a
                 href="#about"
-                className="text-black hover:text-gray-500 text-[1.75rem]"
+                className="text-[1.75rem] text-black hover:text-gray-500"
               >
                 About
               </a>
@@ -17,7 +17,7 @@ export default function Footer() {
             <li>
               <a
                 href="#experience"
-                className="text-black hover:text-gray-500 text-[1.75rem]"
+                className="text-[1.75rem] text-black hover:text-gray-500"
               >
                 Experience
               </a>
@@ -25,7 +25,7 @@ export default function Footer() {
             <li>
               <a
                 href="#projects"
-                className="text-black hover:text-gray-500 text-[1.75rem]"
+                className="text-[1.75rem] text-black hover:text-gray-500"
               >
                 Projects
               </a>
@@ -33,7 +33,7 @@ export default function Footer() {
             <li>
               <a
                 href="#contact"
-                className="text-black hover:text-gray-500 text-[1.75rem]"
+                className="text-[1.75rem] text-black hover:text-gray-500"
               >
                 Contact
               </a>

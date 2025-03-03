@@ -25,19 +25,19 @@ export default function Experience() {
   return (
     <section id="experience" className="relative h-[80vh]!">
       <p className="text-center text-lg">My</p>
-      <h1 className="text-[3rem] text-center font-bold">Stack</h1>
-      <div className="flex flex-col md:flex-row justify-center my-[2rem]">
-        <div className="flex flex-col items-center mx-4">
+      <h1 className="text-center text-[3rem] font-bold">Stack</h1>
+      <div className="my-[2rem] flex flex-col justify-center md:flex-row">
+        <div className="mx-4 flex flex-col items-center">
           <ExperienceContainer expDetails={frontExp} />
         </div>
-        <div className="flex flex-col items-center mx-4 mt-8 md:mt-0">
+        <div className="mx-4 mt-8 flex flex-col items-center md:mt-0">
           <ExperienceContainer expDetails={relSkills} />
         </div>
       </div>
       <img
         src={arrowPng}
         alt="Arrow icon"
-        className="icon arrow mt-8 cursor-pointer absolute bottom-[4.5rem] right-[-5rem] icon"
+        className="icon arrow icon absolute right-[-5rem] bottom-[4.5rem] mt-8 cursor-pointer"
         onClick={() => (window.location.href = "#projects")}
       />
     </section>

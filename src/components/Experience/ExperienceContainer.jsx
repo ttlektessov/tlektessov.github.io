@@ -2,19 +2,19 @@ import checkmark from "../../assets/checkmark.png";
 export default function ExperienceContainer({ expDetails }) {
   return (
     <>
-      <div className="p-[1.5rem] flex-1 border-[#353535] border-solid rounded-[2rem] border-[0.1rem] ">
-        <h2 className="text-[1.75rem] text-[rgb(85,85,85)] font-semibold text-center mb-[2rem]">
+      <div className="flex-1 rounded-[2rem] border-[0.1rem] border-solid border-[#353535] p-[1.5rem]">
+        <h2 className="mb-[2rem] text-center text-[1.75rem] font-semibold text-[rgb(85,85,85)]">
           {expDetails.title}
         </h2>
-        <div className="flex flex-wrap gap-[2.5rem] flex-row justify-evenly">
+        <div className="flex flex-row flex-wrap justify-evenly gap-[2.5rem]">
           {expDetails.skills.map((skill, index) => (
             <article
               key={index}
-              className="flex items-center m-2 w-[10rem] gap-[1.5rem]"
+              className="m-2 flex w-[10rem] items-center gap-[1.5rem]"
             >
               <img src={checkmark} alt="Checkmark" className="h-[2rem]" />
               <div>
-                <h3 className="font-bold text-lg">{skill.name}</h3>
+                <h3 className="text-lg font-bold">{skill.name}</h3>
                 <p>{skill.level}</p>
               </div>
             </article>

@@ -4,16 +4,16 @@ import ProjectsContainer from "./ProjectsContainer";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-10 relative">
-      <h1 className="text-[3rem] text-center font-bold">Projects</h1>
-      <p className="text-lg text-center mb-10">that I worked on</p>
-      <div className="flex flex-wrap justify-center gap-[2rem] my-[2rem]">
+    <section id="projects" className="relative py-10">
+      <h1 className="text-center text-[3rem] font-bold">Projects</h1>
+      <p className="mb-10 text-center text-lg">that I worked on</p>
+      <div className="my-[2rem] flex flex-wrap justify-center gap-[2rem]">
         <ProjectsContainer />
       </div>
       <img
         src={arrowPng}
         alt="Arrow icon"
-        className="icon arrow mt-8 cursor-pointer absolute bottom-[0.5rem] right-[-5rem] icon"
+        className="icon arrow icon absolute right-[-5rem] bottom-[0.5rem] mt-8 cursor-pointer"
         onClick={() => (window.location.href = "#contact")}
       />
     </section>

@@ -28,23 +28,22 @@ export default function ProjectsContainer() {
       {projectData.map((project, index) => (
         <div
           key={index}
-          className="bg-[rgb(250, 250, 250)] max-w-lg h-full shadow-lg p-[1.5rem] flex-1 border-[#353535] border-solid rounded-[2rem] border-[0.1rem]"
+          className="bg-[rgb(250, 250, 250)] h-full max-w-lg flex-1 rounded-[2rem] border-[0.1rem] border-solid border-[#353535] p-[1.5rem] shadow-lg"
         >
           <img
             src={project.image}
             alt={project.title}
-            className="w-[90%] h-[90%] object-cover rounded-4xl m-[0_auto]"
+            className="m-[0_auto] h-[90%] w-[90%] rounded-4xl object-cover"
           />
 
-          <h2 className="text-[1.75rem] font-bold text-center m-[1rem]">
+          <h2 className="m-[1rem] text-center text-[1.75rem] font-bold">
             {project.title}
           </h2>
           <div className="flex justify-center gap-[1rem]">
             {project.appStoreLink && (
               <button
                 onClick={() => window.open(project.appStoreLink, "_blank")}
-                className="border-[0.1rem] border-[#353535]  
-              hover:bg-[#353535] hover:text-white"
+                className="border-[0.1rem] border-[#353535] hover:bg-[#353535] hover:text-white"
               >
                 App Store
               </button>
@@ -52,16 +51,14 @@ export default function ProjectsContainer() {
             {project.playStoreLink && (
               <button
                 onClick={() => window.open(project.playStoreLink, "_blank")}
-                className="border-[0.1rem] border-[#353535]  
-              hover:bg-[#353535] hover:text-white"
+                className="border-[0.1rem] border-[#353535] hover:bg-[#353535] hover:text-white"
               >
                 Play Market
               </button>
             )}
             <button
               onClick={() => window.open(project.demoLink, "_blank")}
-              className="border-[0.1rem] border-[#353535]  
-            hover:bg-[#353535] hover:text-white"
+              className="border-[0.1rem] border-[#353535] hover:bg-[#353535] hover:text-white"
             >
               Live Demo
             </button>

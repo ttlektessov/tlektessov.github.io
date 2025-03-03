@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Profile from "./components/Profile";
-import About from "./components/About";
+import Header from "./components/Header/Header";
+import Profile from "./components/Hero/Profile";
+import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import useWindowSize from "./useWindowSize";
 function App() {
   const { width } = useWindowSize();
@@ -20,7 +20,7 @@ function App() {
   } else {
     return (
       <>
-        <Navbar />
+        <Header />
         <Profile />
         <About />
         <Experience />
