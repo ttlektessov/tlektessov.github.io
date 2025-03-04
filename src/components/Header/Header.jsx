@@ -37,11 +37,11 @@ export default function Header({ darkMode, toggleDarkMode }) {
         darkMode +
         " " +
         (scrolled
-          ? "sticky top-0 z-30 w-full border-b border-transparent bg-gray-50 backdrop-blur-xl max-md:border-gray-100 md:border-gray-100"
+          ? "bg-gray/50 sticky top-0 z-30 w-full border-b border-transparent backdrop-blur-xl max-md:border-gray-100 md:border-gray-100"
           : "bg-gray-default sticky top-0 z-30 w-full border-b border-transparent max-md:border-gray-100")
       }
     >
-      <div className="bg-gray-default mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
         <div className="h3">{"<TT />"}</div>
         {/* desktop menu */}
         <div className="hidden items-center gap-6 md:flex">
@@ -63,17 +63,11 @@ export default function Header({ darkMode, toggleDarkMode }) {
               {darkMode === "dark" ? <Sun color="#ffffff" /> : <MoonStar />}
             </IconButton>
             <Button
-              className="w-full" // Additional classes
+              className="w-full"
               onClick={() => window.open(documents.resume)}
             >
               Download CV
             </Button>
-            {/* <button
-              className="inline-flex items-center justify-center rounded-xl bg-gray-900 px-4 py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800"
-              onClick={() => window.open(documents.resume)}
-            >
-              Download CV
-            </button> */}
           </div>
         </div>
 
