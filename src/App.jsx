@@ -8,6 +8,8 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import useWindowSize from "./useWindowSize";
 import { useState, useEffect } from "react";
+import ConstructionContainer from "./components/General/ConstructionContainer";
+
 function App() {
   const [darkMode, setDarkMode] = useState("dark");
   useEffect(() => {
@@ -23,10 +25,11 @@ function App() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Profile />
       <About />
-      <Experience />
+      <ConstructionContainer />
+      {/* <Experience />
       <Projects />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
