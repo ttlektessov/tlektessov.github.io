@@ -1,8 +1,7 @@
-import checkmark from "../../assets/checkmark.png";
 export default function ExperienceContainer({ expDetails }) {
   return (
     <>
-      <div className="flex-1 rounded-[2rem] border-[0.1rem] border-solid border-[#353535] p-[1.5rem]">
+      {/* <div className="flex-1 rounded-[2rem] border-[0.1rem] border-solid border-[#353535] p-[1.5rem]">
         <h2 className="mb-[2rem] text-center text-[1.75rem] font-semibold text-[rgb(85,85,85)]">
           {expDetails.title}
         </h2>
@@ -20,7 +19,7 @@ export default function ExperienceContainer({ expDetails }) {
             </article>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -4,8 +4,7 @@ const Container = ({ className, children, ...props }, ref) => {
   return (
     <section
       className={
-        "bg-gray-default w-full py-16 md:py-20 2xl:py-24" +
-        (className ? ` ${className}` : "")
+        "w-full py-16 md:py-20 2xl:py-24" + (className ? ` ${className}` : "")
       }
       ref={ref}
       {...props}
