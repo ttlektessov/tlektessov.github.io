@@ -1,11 +1,45 @@
 import React from "react";
 import Container from "../General/Container";
 import { images } from "../../assets";
-import useWindowSize from "../Hooks/use-windows-size";
+import { useResponsive } from "../Hooks/useResponsive";
 import IconButton from "../General/IconButton";
 
+function Desktop() {
+  return (
+    <>
+      <p className="h1">
+        Hey there,
+        <br />
+        nice to meet you!
+        <span className="animate-waving-hand inline-block text-[72px]">👋</span>
+      </p>
+      <p className="body2 mt-8">
+        From: Temirlan Tlektessov
+        <br />
+        Frontend Developer @ {"(this could be your company name! :D)"}
+      </p>
+    </>
+  );
+}
+
+function Mobile() {
+  return (
+    <>
+      <p className="h1">
+        Hey there!
+        <span className="animate-waving-hand inline-block text-[72px]">👋</span>
+      </p>
+      <p className="body2 mt-8">
+        I'm Temirlan Tlektessov,
+        <br />
+        Frontend Developer @ {"(this could be your company name! :D)"}
+      </p>
+    </>
+  );
+}
+
 export default function Profile() {
-  const size = useWindowSize();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   return (
     <Container id="hero">
       <div className="flex flex-col gap-12 md:flex-row">
@@ -20,20 +54,7 @@ export default function Profile() {
         </div>
         <div className="flex max-w-3xl flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
           <div className="flex flex-col gap-2">
-            {size.width && size.width > 767 ? "" : ""}
-            <p className="h1">
-              Hey there, nice to meet
-              <br />
-              you!
-              <span className="animate-waving-hand inline-block text-[72px]">
-                👋
-              </span>
-            </p>
-            <p className="body2 mt-8">
-              From: Temirlan Tlektessov
-              <br />
-              Frontend Developer @ {"(this could be your company name! :D)"}
-            </p>
+            {isMobile ? <Mobile /> : <Desktop />}
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2">
