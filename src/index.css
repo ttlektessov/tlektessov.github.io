@@ -45,6 +45,49 @@
   --color-gray-800: rgb(var(--color-gray-800) / <alpha-value>);
   --color-gray-900: rgb(var(--color-gray-900) / <alpha-value>);
   --color-gray-950: rgb(var(--color-gray-950) / <alpha-value>);
+
+  --animate-drawer-open: open 0.3s ease-in-out;
+  --animate-drawer-close: close 0.3s ease-in-out;
+  --animate-waving-hand: waving 2s linear 3;
+
+  @keyframes open {
+    0% {
+      opacity: 1;
+      transform: translateX(100%);
+    }
+  }
+  @keyframes close {
+    to {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+  @keyframes waving {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 }
 body {
   --font-poppins: Poppins, sans-serif;
@@ -81,10 +124,10 @@ body {
 }
 
 /* Below is old design */
-section {
+/* section {
   @apply m-[0_10rem] box-border h-[96vh] min-h-fit pt-[4vh];
-}
-a:hover {
+} */
+/* a:hover {
   @apply text-gray-600 underline decoration-gray-600 underline-offset-[1rem];
 }
 
@@ -92,7 +135,7 @@ a,
 button {
   @apply transition delay-150 duration-300;
 }
-*/ p {
+p {
   @apply font-medium text-[#555555];
 }
 
@@ -103,14 +146,14 @@ button {
 
 button:hover {
   @apply cursor-pointer;
-}
+} */
 .icon {
   @apply inline h-[2rem] w-[2rem];
 }
 
-.profile-section {
+/* .profile-section {
   @apply flex h-[80vh] justify-center gap-[5rem];
-}
+} */
 .contact-me-section {
   @apply flex h-[80vh] flex-col justify-center;
 }
