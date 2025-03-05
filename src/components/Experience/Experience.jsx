@@ -1,44 +1,22 @@
 import React from "react";
+import SectionTag from "../General/SectionTag";
+import Container from "../General/Container";
+import ExpsContainer from "./ExpsContainer";
+
 export default function Experience() {
-  const frontExp = {
-    title: "Frontend Development",
-    skills: [
-      { name: "Dart", level: "Experienced" },
-      { name: "HTML", level: "Experienced" },
-      { name: "SCSS", level: "Experienced" },
-      { name: "JavaScript", level: "Intermediate" },
-      { name: "Tailwindcss", level: "Intermediate" },
-    ],
-  };
-  const relSkills = {
-    title: "Relevant Skills",
-    skills: [
-      { name: "GetX", level: "Experienced" },
-      { name: "RestAPI", level: "Intermediate" },
-      { name: "jQuery", level: "Intermediate" },
-      { name: "Git", level: "Intermediate" },
-      { name: "PostgreSQL", level: "Intermediate" },
-    ],
-  };
   return (
-    <></>
-    // <section id="experience" className="relative h-[80vh]!">
-    //   <p className="text-center text-lg">My</p>
-    //   <h1 className="text-center text-[3rem] font-bold">Stack</h1>
-    //   <div className="my-[2rem] flex flex-col justify-center md:flex-row">
-    //     <div className="mx-4 flex flex-col items-center">
-    //       <ExperienceContainer expDetails={frontExp} />
-    //     </div>
-    //     <div className="mx-4 mt-8 flex flex-col items-center md:mt-0">
-    //       <ExperienceContainer expDetails={relSkills} />
-    //     </div>
-    //   </div>
-    //   <img
-    //     src={arrowPng}
-    //     alt="Arrow icon"
-    //     className="icon arrow icon absolute right-[-5rem] bottom-[4.5rem] mt-8 cursor-pointer"
-    //     onClick={() => (window.location.href = "#projects")}
-    //   />
-    // </section>
+    <>
+      <Container id="experience" className="bg-gray-50">
+        <div className="flex flex-col items-center gap-4">
+          <div className="self-center">
+            <SectionTag label="Experience" />
+          </div>
+          <p className="subtitle max-w-xl text-center">
+            Here is a quick summary of my most recent experiences:
+          </p>
+        </div>
+        <ExpsContainer />
+      </Container>
+    </>
   );
 }

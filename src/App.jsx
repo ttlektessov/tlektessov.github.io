@@ -27,8 +27,9 @@ function App() {
       <Profile />
       <About />
       <Skills darkMode={darkMode} />
+      <Experience />
       <ConstructionContainer />
-      {/* <Experience />
+      {/*
       <Projects />
       <Contact />
       <Footer /> */}
