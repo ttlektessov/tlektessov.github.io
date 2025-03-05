@@ -16,8 +16,8 @@ My personal portfolio website built using React, Vite, and Tailwind CSS.
 To get started with this project, clone the repository and install the dependencies:
 
 ```sh
-git clone https://github.com/tlektessov/tlektessov
-cd tlektessov
+git clone https://github.com/tlektessov/tlektessov.github.io
+cd tlektessov.github.io
 npm install
 ```
 
@@ -46,45 +46,54 @@ npm run preview
 ## Project Structure
 
 ```filetree
-tlektessov
-├── public
-│   ├── favicon.ico
-│   └── index.html
+tlektessov.github.io
 ├── src
 │   ├── assets
-│   │   ├── about-pic.png
-│   │   ├── admin_page.png
-│   │   ├── arrow.png
-│   │   ├── checkmark.png
-│   │   ├── education.png
-│   │   ├── email.png
-│   │   ├── experience.png
-│   │   ├── github.png
-│   │   ├── linkedin.png
-│   │   ├── mindsight_mobile.png
-│   │   ├── patron_website.png
-│   │   ├── profile-pic.png
-│   │   └── Temirlan_Tlektessov_Resume.pdf
 │   ├── components
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
+│   │   ├── About
+│   │   │   └── About.jsx
+│   │   ├── Contact
+│   │   │   └── Contact.jsx
 │   │   ├── Experience
 │   │   │   ├── Experience.jsx
-│   │   │   └── ExperienceContainer.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Profile.jsx
+│   │   │   └── ExpsContainer.jsx
+│   │   ├── Footer
+│   │   │   └── Footer.jsx
+│   │   ├── General
+│   │   │   ├── Button.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── ConstructionContainer.jsx
+│   │   │   ├── Container.jsx
+│   │   │   ├── Drawer.jsx
+│   │   │   ├── IconButton.jsx
+│   │   │   └── SectionTag.jsx
+│   │   ├── Header
+│   │   │   └── Header.jsx
+│   │   ├── Hero
+│   │   │   └── Profile.jsx
+│   │   ├── Hooks
+│   │   │   ├── use-scroll.js
+│   │   │   ├── use-windows-size.js
+│   │   │   └── useResponsive.js
 │   │   ├── Projects
 │   │   │   ├── Projects.jsx
 │   │   │   └── ProjectsContainer.jsx
+│   │   └── Skills
+│   │       ├── Skills.jsx
+│   │       └── SkillsLogos.jsx
+│   ├── assets.jsx
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
+├── .github
+│   └── workflows
+│       └── static.yml
 ├── .gitignore
+├── .prettierrc
 ├── eslint.config.js
+├── index.html
 ├── package.json
-├── postcss.config.js
-├── tailwind.config.js
+├── README.md
 └── vite.config.js
 ```
 
@@ -93,6 +102,8 @@ tlektessov
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [Radix UI](https://www.radix-ui.com/)
 
 ## Scripts
 
