@@ -95,6 +95,7 @@ tlektessov.github.io
 ├── package.json
 ├── README.md
 └── vite.config.js
+```
 
 ## Dependencies
 
