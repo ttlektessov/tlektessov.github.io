@@ -31,8 +31,8 @@ function App() {
       <ConstructionContainer />
       {/*
       <Projects />
-      <Contact />
        */}
+      <Contact darkMode={darkMode} />
       <Footer />
     </>
   );

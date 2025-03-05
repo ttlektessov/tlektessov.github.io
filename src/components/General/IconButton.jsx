@@ -26,7 +26,7 @@ const IconButton = forwardRef(
       <button className={buttonClasses} ref={ref} {...props}>
         {children}
         {showTooltip && tooltipText.length > 0 && (
-          <span className="absolute -top-8 rounded-lg bg-gray-200 px-2 py-1 text-sm">
+          <span className="body3 absolute -top-8 rounded-lg bg-gray-200 px-2 py-1 text-sm">
             {tooltipText}
           </span>
         )}

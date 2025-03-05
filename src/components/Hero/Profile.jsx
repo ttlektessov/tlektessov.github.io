@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../General/Container";
 import { images } from "../../assets";
 import { useResponsive } from "../Hooks/useResponsive";
-import IconButton from "../General/IconButton";
+import SocialIcons from "../General/SocialIcons";
 
 export default function Profile() {
   const { isMobile, isTablet, isDesktop } = useResponsive();
@@ -33,34 +33,7 @@ export default function Profile() {
               <span className="body2">Available for new projects</span>
             </div>
           </div>
-          <div className="flex gap-1">
-            <IconButton
-              onClick={() =>
-                window.open("https://github.com/ttlektessov", "_blank")
-              }
-            >
-              <img
-                src={images.LogoGithub}
-                alt="GitHub"
-                width="24"
-                height="24"
-                className="dark:invert"
-              />
-            </IconButton>
-            <IconButton
-              onClick={() =>
-                window.open("https://linkedin.com/in/tlektessov", "_blank")
-              }
-            >
-              <img
-                src={images.LogoLinkedin}
-                alt="LinkedIn"
-                width="24"
-                height="24"
-                className="dark:invert"
-              />
-            </IconButton>
-          </div>
+          <SocialIcons />
         </div>
       </div>
     </Container>

@@ -6,7 +6,7 @@ export default function ContstructionContainer() {
       <hr className="my-8 h-px w-full border-0 bg-gray-200"></hr>
       <Construction color="#6b7280" />
       <p className="h1 text-center">
-        Projects & Contact me
+        Projects are
         <br />
         Under construction
       </p>
