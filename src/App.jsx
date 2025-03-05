@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import useWindowSize from "./useWindowSize";
 import { useState, useEffect } from "react";
 import ConstructionContainer from "./components/General/ConstructionContainer";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   const [darkMode, setDarkMode] = useState("dark");
@@ -25,6 +26,7 @@ function App() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Profile />
       <About />
+      <Skills darkMode={darkMode} />
       <ConstructionContainer />
       {/* <Experience />
       <Projects />
