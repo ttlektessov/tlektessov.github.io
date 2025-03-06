@@ -49,11 +49,7 @@ export default function ExperienceContainer() {
             <p className="subtitle mb-2 font-semibold italic">
               {exp.organization}
             </p>
-            <p className="body3">
-              Seoul,
-              <br />
-              South Korea
-            </p>
+            <p className="body3">Seoul, South Korea</p>
           </div>
           <div className="flex flex-col gap-4 max-md:order-3 md:w-3/4">
             <p className="subtitle font-semibold text-gray-900 underline">
