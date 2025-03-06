@@ -4,8 +4,8 @@ const Experiences = [
   {
     organization: "NODAMEN",
     position: "Frontend & Mobile Developer",
-    startDate: new Date(2023, 5),
-    endDate: new Date(2024, 9),
+    startDate: new Date(2023, 4),
+    endDate: new Date(2024, 8),
     summary: [
       "Developed membership, personalized content, and personal pages using HTML, CSS, JS, and jQuery, improving overall website functionality and user engagement by over 30%.",
       "Successfully integrated RESTful APIs into the front-end, enabling dynamic content delivery and realtime updates for membership subscriptions and personalized content.",
@@ -17,7 +17,7 @@ const Experiences = [
     organization: "Embassy of Kazakhstan in Korea",
     position: "IT Support",
     startDate: new Date(2020, 7),
-    endDate: new Date(2021, 12),
+    endDate: new Date(2021, 11),
     summary: [
       "Provided diagnostics and maintenance for personnel electronic devices, and assisted in the digitization of embassy services, enhancing operational efficiency and user accessibility",
       "Developed a Telegram bot that enabled users to communicate and receive support from the embassy, facilitating over 200 user interactions each month and improving response times by 35%.",
@@ -27,7 +27,7 @@ const Experiences = [
     organization: "Sejong University",
     position: "Teaching Assistant",
     startDate: new Date(2020, 9),
-    endDate: new Date(2020, 12),
+    endDate: new Date(2020, 11),
     summary: [
       "Provided teaching assistance for the Advanced C Programming course, supporting the instructor and enhancing student understanding and performance.",
       "Updated weekly labs for 30 students (8 Labs in total)",
