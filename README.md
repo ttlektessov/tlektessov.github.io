@@ -2,6 +2,8 @@
 
 My personal portfolio website built using React, Vite, and Tailwind CSS.
 
+<img src="assets/Thumbnail.png" alt="[Thumbnail]"/>
+
 ## Table of Contents
 
 - [Installation](#installation)

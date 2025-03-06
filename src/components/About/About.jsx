@@ -22,7 +22,7 @@ export default function About() {
         <div className="flex max-w-xl flex-col gap-6">
           <h3 className="h3">Constantly changing.</h3>
           <p className="body3">
-            I'm a a recent grad with a degree in Computer Science & Engineering
+            I'm a recent grad with a degree in Computer Science & Engineering
             and International Studies from Korea University. My journey as a web
             developer began at NODAMEN, where I was responsible for the
             development, optimization, and bug fixing of web services. These web

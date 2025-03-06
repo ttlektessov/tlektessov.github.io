@@ -16,7 +16,7 @@ const Experiences = [
   {
     organization: "Embassy of Kazakhstan in Korea",
     position: "IT Support",
-    startDate: new Date(2020, 7),
+    startDate: new Date(2020, 6),
     endDate: new Date(2021, 11),
     summary: [
       "Provided diagnostics and maintenance for personnel electronic devices, and assisted in the digitization of embassy services, enhancing operational efficiency and user accessibility",
@@ -26,7 +26,7 @@ const Experiences = [
   {
     organization: "Sejong University",
     position: "Teaching Assistant",
-    startDate: new Date(2020, 9),
+    startDate: new Date(2020, 8),
     endDate: new Date(2020, 11),
     summary: [
       "Provided teaching assistance for the Advanced C Programming course, supporting the instructor and enhancing student understanding and performance.",
