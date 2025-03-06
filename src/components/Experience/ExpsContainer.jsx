@@ -46,15 +46,17 @@ export default function ExperienceContainer() {
           }
         >
           <div className="flex flex-col max-md:order-1 md:w-1/4">
-            <p className="subtitle mb-2 font-semibold">{exp.organization}</p>
-            <p className="body2">
+            <p className="subtitle mb-2 font-semibold italic">
+              {exp.organization}
+            </p>
+            <p className="body3">
               Seoul,
               <br />
               South Korea
             </p>
           </div>
           <div className="flex flex-col gap-4 max-md:order-3 md:w-3/4">
-            <p className="subtitle font-semibold text-gray-900">
+            <p className="subtitle font-semibold text-gray-900 underline">
               {exp.position}
             </p>
             <ul className="flex list-disc flex-col gap-2 md:gap-1">

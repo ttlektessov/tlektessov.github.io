@@ -1,66 +1,50 @@
-export default function ProjectsContainer() {
-  // const projectData = [
-  //   {
-  //     title: "Patron",
-  //     image: patronWebsite,
-  //     demoLink: "https://youtu.be/aoQ_UkyYj5c",
-  //   },
-  //   {
-  //     title: "Mindsight Mobile App",
-  //     image: mindsightMobile,
-  //     appStoreLink:
-  //       "https://apps.apple.com/kr/app/mindsight-meditation-sleep/id6483054091",
-  //     playStoreLink:
-  //       "https://play.google.com/store/apps/details?id=com.nodamen.mindsight.app&pcampaignid=web_share",
-  //     demoLink: "https://youtu.be/HLyOmjkndec",
-  //   },
-  //   {
-  //     title: "Mindsight Admin Page",
-  //     image: adminPage,
-  //     demoLink: "https://youtu.be/S3Iaz10erTA",
-  //   },
-  // ];
-  // return (
-  //   <>
-  //     {projectData.map((project, index) => (
-  //       <div
-  //         key={index}
-  //         className="bg-[rgb(250, 250, 250)] h-full max-w-lg flex-1 rounded-[2rem] border-[0.1rem] border-solid border-[#353535] p-[1.5rem] shadow-lg"
-  //       >
-  //         <img
-  //           src={project.image}
-  //           alt={project.title}
-  //           className="m-[0_auto] h-[90%] w-[90%] rounded-4xl object-cover"
-  //         />
-  //         <h2 className="m-[1rem] text-center text-[1.75rem] font-bold">
-  //           {project.title}
-  //         </h2>
-  //         <div className="flex justify-center gap-[1rem]">
-  //           {project.appStoreLink && (
-  //             <button
-  //               onClick={() => window.open(project.appStoreLink, "_blank")}
-  //               className="border-[0.1rem] border-[#353535] hover:bg-[#353535] hover:text-white"
-  //             >
-  //               App Store
-  //             </button>
-  //           )}
-  //           {project.playStoreLink && (
-  //             <button
-  //               onClick={() => window.open(project.playStoreLink, "_blank")}
-  //               className="border-[0.1rem] border-[#353535] hover:bg-[#353535] hover:text-white"
-  //             >
-  //               Play Market
-  //             </button>
-  //           )}
-  //           <button
-  //             onClick={() => window.open(project.demoLink, "_blank")}
-  //             className="border-[0.1rem] border-[#353535] hover:bg-[#353535] hover:text-white"
-  //           >
-  //             Live Demo
-  //           </button>
-  //         </div>
-  //       </div>
-  //     ))}
-  //   </>
-  // );
+import Card from "../General/Card";
+import IconButton from "../General/IconButton";
+import SectionTag from "../General/SectionTag";
+import { ExternalLink } from "lucide-react";
+
+export default function ProjectsContainer({ project, layout }) {
+  const { name, description, url, previewImage, technologies } = project;
+  return (
+    <Card className="mx-auto flex max-w-6xl flex-col md:w-[70%] md:flex-row">
+      {/* Image container */}
+      <div
+        className={
+          layout === "default"
+            ? "flex items-center justify-center border-gray-100 bg-gray-50 p-8 max-md:rounded-t-xl md:w-1/2 md:rounded-l-xl md:border-r lg:p-12 dark:bg-gray-200"
+            : "flex items-center justify-center border-gray-100 bg-gray-50 p-8 max-md:rounded-t-xl md:order-last md:w-1/2 md:rounded-r-xl md:border-l lg:p-12 dark:bg-gray-200"
+        }
+      >
+        <a href={url} target="_blank" rel="noreferrer">
+          <img
+            src={previewImage}
+            alt={name}
+            className="rounded-xl object-cover shadow-lg transition-transform duration-500 md:hover:scale-105"
+          />
+        </a>
+      </div>
+      {/* Content Container  */}
+      <div
+        className={
+          layout === "default"
+            ? "flex flex-col gap-6 p-8 md:w-1/2 lg:p-12"
+            : "flex flex-col gap-6 p-8 md:order-first md:w-1/2 lg:p-12"
+        }
+      >
+        <p className="h3 font-semibold text-gray-900">{name}</p>
+        <p className="body2">{description}</p>
+        <div className="flex flex-wrap gap-2">
+          {technologies?.map((technology, index) => (
+            <SectionTag key={index} label={technology} />
+          ))}
+        </div>
+        <IconButton
+          className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
+          onClick={() => window.open(url, "_blank")}
+        >
+          <ExternalLink />
+        </IconButton>
+      </div>
+    </Card>
+  );
 }

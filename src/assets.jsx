@@ -12,7 +12,9 @@ import LogoScss from "./assets/images/logos/icon-sass.svg";
 import LogoTailwind from "./assets/images/logos/icon-tailwindcss.svg";
 import LogoGithub from "./assets/images/logos/github.svg";
 import LogoLinkedin from "./assets/images/logos/linkedin.svg";
-
+import PatronWebsite from "./assets/images/patron_website.png";
+import MindsightDashboard from "./assets/images/admin_page.png";
+import MindsightMobile from "./assets/images/mindsight_mobile.png";
 // Documents
 import resume from "./assets/files/Temirlan_Tlektessov_Resume.pdf";
 
@@ -30,6 +32,9 @@ export const images = {
   LogoTailwind,
   LogoGithub,
   LogoLinkedin,
+  PatronWebsite,
+  MindsightDashboard,
+  MindsightMobile,
 };
 
 export const documents = {
