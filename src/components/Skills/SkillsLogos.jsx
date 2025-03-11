@@ -7,6 +7,7 @@ import LogoPostgreSQL from "../../assets/images/logos/icon-postgresql.svg";
 import LogoSass from "../../assets/images/logos/icon-sass.svg";
 import LogoTailwindcss from "../../assets/images/logos/icon-tailwindcss.svg";
 import LogoGit from "../../assets/images/logos/icon-git.svg";
+import { useDarkMode } from "../context/DarkModeContext";
 const skills = [
   {
     label: "Javascript",
@@ -50,7 +51,8 @@ const skills = [
     url: "https://git-scm.com/",
   },
 ];
-export default function SkillsLogos({ darkMode }) {
+export default function SkillsLogos() {
+  const { darkMode } = useDarkMode();
   return (
     <>
       {skills.map((skill, index) => (

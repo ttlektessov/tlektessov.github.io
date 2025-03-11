@@ -1,5 +1,3 @@
-import * as React from "react";
-
 const Container = ({ className, children, ...props }, ref) => {
   return (
     <section

@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectsContainer from "./ProjectsContainer";
 import Container from "../General/Container";
 import SectionTag from "../General/SectionTag";
@@ -39,7 +38,7 @@ const MyProjects = [
       "Postman",
       "PostgreSQL",
       "JQuery",
-      `QC\QA`,
+      `QC\\QA`,
       "Git",
       "Figma",
     ],

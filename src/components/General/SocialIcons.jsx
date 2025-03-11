@@ -1,6 +1,6 @@
 import IconButton from "../General/IconButton";
 import { images } from "../../assets";
-export default function SocialIcons({}) {
+export default function SocialIcons() {
   return (
     <div className="flex gap-1">
       <IconButton

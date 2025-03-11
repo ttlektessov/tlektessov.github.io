@@ -1,5 +1,5 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useDarkMode } from "../context/DarkModeContext";
 import useScroll from "../Hooks/use-scroll";
 import useWindowSize from "../Hooks/use-windows-size";
 import { MoonStar, Sun, Menu, X } from "lucide-react";
@@ -14,10 +14,12 @@ import {
 import IconButton from "../General/IconButton";
 import Button from "../General/Button";
 
-export default function Header({ darkMode, toggleDarkMode }) {
+export default function Header() {
+  const { darkMode, toggleDarkMode } = useDarkMode();
   const scrolled = useScroll();
   const size = useWindowSize();
   const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     if (size?.width && size?.width > 767 && isOpen) {
       setIsOpen(false);

@@ -1,9 +1,8 @@
 import Container from "../General/Container";
-import { images } from "../../assets";
 import SectionTag from "../General/SectionTag";
 import SkillsLogos from "./SkillsLogos";
 
-export default function Skills({ darkMode }) {
+export default function Skills() {
   return (
     <Container id="skills" className="bg-gray-default">
       <div className="flex flex-col items-center gap-4">
@@ -15,7 +14,7 @@ export default function Skills({ darkMode }) {
         </p>
       </div>
       <div className="grid grid-cols-2 gap-y-4 md:gap-y-8 lg:grid-cols-4 lg:gap-y-12">
-        <SkillsLogos darkMode={darkMode} />
+        <SkillsLogos />
       </div>
     </Container>
   );

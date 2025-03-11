@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../General/Container";
 import SectionTag from "../General/SectionTag";
 import { images } from "../../assets";
@@ -22,12 +21,13 @@ export default function About() {
         <div className="flex max-w-xl flex-col gap-6">
           <h3 className="h3">Constantly changing.</h3>
           <p className="body3">
-            I'm a recent grad with a degree in Computer Science & Engineering
-            and International Studies from Korea University. My journey as a web
-            developer began at NODAMEN, where I was responsible for the
-            development, optimization, and bug fixing of web services. These web
-            services showcased digital exhibitions curated by staff, allowing
-            users to enjoy 4K digital artworks on PCs, mobile devices, and TVs.
+            I&apos;m a recent grad with a degree in Computer Science &
+            Engineering and International Studies from Korea University. My
+            journey as a web developer began at NODAMEN, where I was responsible
+            for the development, optimization, and bug fixing of web services.
+            These web services showcased digital exhibitions curated by staff,
+            allowing users to enjoy 4K digital artworks on PCs, mobile devices,
+            and TVs.
           </p>
           <p className="body3">
             I was also a Flutter developer responsible for developing web admin
@@ -37,7 +37,7 @@ export default function About() {
           <p className="body3">
             My goal is to continually expand my abilities in front-end
             development and create impactful user experiences. You can see the
-            projects I've worked on in the "Projects" section!
+            projects I&apos;ve worked on in the &quot;Projects&quot; section!
           </p>
           <p className="body3">Finally, some quick bits about me.</p>
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">

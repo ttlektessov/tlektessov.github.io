@@ -1,11 +1,11 @@
-import React from "react";
 import Container from "../General/Container";
 import { images } from "../../assets";
 import { useResponsive } from "../Hooks/useResponsive";
 import SocialIcons from "../General/SocialIcons";
 
 export default function Profile() {
-  const { isMobile, isTablet, isDesktop } = useResponsive();
+  const { isMobile } = useResponsive();
+
   return (
     <Container id="hero" className="bg-gray-default">
       <div className="flex flex-col gap-12 md:flex-row">
@@ -39,6 +39,7 @@ export default function Profile() {
     </Container>
   );
 }
+
 function Desktop() {
   return (
     <>
@@ -65,7 +66,7 @@ function Mobile() {
         <span className="animate-waving-hand inline-block text-[72px]">👋</span>
       </p>
       <p className="body2 mt-8">
-        I'm Temirlan Tlektessov,
+        I&apos;m Temirlan Tlektessov,
         <br />
         Frontend Developer @ {"(this could be your company name! :D)"}
       </p>
