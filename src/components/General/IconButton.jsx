@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-
+// add memo to prevent re-render
 const IconButton = forwardRef(
   (
     {

@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTag from "../General/SectionTag";
 import Container from "../General/Container";
 import ExpsContainer from "./ExpsContainer";

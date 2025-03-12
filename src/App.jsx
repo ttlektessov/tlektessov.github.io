@@ -13,12 +13,14 @@ function App() {
     <>
       <DarkModeProvider>
         <Header />
-        <Profile />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
+        <main>
+          <Profile />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
         <Footer />
       </DarkModeProvider>
     </>
