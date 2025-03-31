@@ -2,9 +2,12 @@ import Container from "../General/Container";
 import { images } from "../../assets";
 import { useResponsive } from "../Hooks/useResponsive";
 import SocialIcons from "../General/SocialIcons";
+import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 export default function Profile() {
   const { isMobile } = useResponsive();
+  const { t } = useTranslation();
 
   return (
     <Container id="hero" className="bg-gray-default">
@@ -14,7 +17,7 @@ export default function Profile() {
             <img
               className="h-full w-full rounded-full object-cover"
               src={images.profilePic}
-              alt="Temirlan Tlektessov profile picture"
+              alt="profile picture"
             />
           </div>
         </div>
@@ -30,7 +33,7 @@ export default function Profile() {
                   <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
                 </span>
               </div>
-              <span className="body2">Available for new projects</span>
+              <span className="body2">{t("hero.projects")}</span>
             </div>
           </div>
           <SocialIcons />
@@ -44,15 +47,11 @@ function Desktop() {
   return (
     <>
       <p className="h1">
-        Hey there,
-        <br />
-        nice to meet you!
+        <Trans i18nKey="hero.hello" />
         <span className="animate-waving-hand inline-block text-[72px]">👋</span>
       </p>
       <p className="body2 mt-8">
-        From: Temirlan Tlektessov
-        <br />
-        Frontend Developer @ {"(this could be your company name! :D)"}
+        <Trans i18nKey="hero.intro" />
       </p>
     </>
   );
@@ -62,13 +61,11 @@ function Mobile() {
   return (
     <>
       <p className="h1">
-        Hey there!
+        <Trans i18nKey="hero.hello_mobile" />
         <span className="animate-waving-hand inline-block text-[72px]">👋</span>
       </p>
       <p className="body2 mt-8">
-        I&apos;m Temirlan Tlektessov,
-        <br />
-        Frontend Developer @ {"(this could be your company name! :D)"}
+        <Trans i18nKey="hero.intro_mobile" />
       </p>
     </>
   );

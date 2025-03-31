@@ -5,5 +5,12 @@
   "projects": "Projects",
   "contact": "Contact",
   "download_cv": "Download CV",
-  "switch_theme": "Switch Theme"
+  "switch_theme": "Switch Theme",
+  "hero": {
+    "hello": "Hey there,<br />nice to meet you!",
+    "intro": "From: Temirlan Tlektessov<br />Frontend Developer @ (this could be your company name! :D)",
+    "hello_mobile": "Hey there!",
+    "intro_mobile": "I'm Temirlan Tlektessov,<br />Frontend Developer @ (this could be your company name! :D)",
+    "projects": "Available for new projects"
+  }
 }
