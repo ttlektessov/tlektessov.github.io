@@ -10,7 +10,7 @@ export default function Profile() {
   const { t } = useTranslation();
 
   return (
-    <Container id="hero" className="bg-gray-default">
+    <Container id="hero_s" className="bg-gray-default">
       <div className="flex flex-col gap-12 md:flex-row">
         <div className="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
           <div className="bg-gray-default mx-0 my-auto h-[350px] w-[350px]">
@@ -33,7 +33,7 @@ export default function Profile() {
                   <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
                 </span>
               </div>
-              <span className="body2">{t("hero.projects")}</span>
+              <span className="body2">{t("hero_s.projects")}</span>
             </div>
           </div>
           <SocialIcons />
@@ -47,11 +47,11 @@ function Desktop() {
   return (
     <>
       <p className="h1">
-        <Trans i18nKey="hero.hello" />
+        <Trans i18nKey="hero_s.hello" />
         <span className="animate-waving-hand inline-block text-[72px]">👋</span>
       </p>
       <p className="body2 mt-8">
-        <Trans i18nKey="hero.intro" />
+        <Trans i18nKey="hero_s.intro" />
       </p>
     </>
   );
@@ -61,11 +61,11 @@ function Mobile() {
   return (
     <>
       <p className="h1">
-        <Trans i18nKey="hero.hello_mobile" />
+        <Trans i18nKey="hero_s.hello_mobile" />
         <span className="animate-waving-hand inline-block text-[72px]">👋</span>
       </p>
       <p className="body2 mt-8">
-        <Trans i18nKey="hero.intro_mobile" />
+        <Trans i18nKey="hero_s.intro_mobile" />
       </p>
     </>
   );

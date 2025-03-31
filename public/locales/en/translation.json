@@ -6,7 +6,7 @@
   "contact": "Contact",
   "download_cv": "Download CV",
   "switch_theme": "Switch Theme",
-  "hero": {
+  "hero_s": {
     "hello": "Hey there,<br />nice to meet you!",
     "intro": "From: Temirlan Tlektessov<br />Frontend Developer @ (this could be your company name! :D)",
     "hello_mobile": "Hey there!",
@@ -26,5 +26,14 @@
     "two": "FC Barcelona fan since 2013",
     "three": "Double Majored in International Studies",
     "four": "Video games lover"
+  },
+  "skills_s": {
+    "title": "Skills",
+    "intro": "The skills, tools and technologies I am good at:"
+  },
+  "experience_s": {
+    "title": "Experience",
+    "intro": "Here is a quick summary of my most recent experiences:",
+    "south_korea": "Seoul, South Korea"
   }
 }
