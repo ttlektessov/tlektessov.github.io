@@ -12,5 +12,19 @@
     "hello_mobile": "Hey there!",
     "intro_mobile": "I'm Temirlan Tlektessov,<br />Frontend Developer @ (this could be your company name! :D)",
     "projects": "Available for new projects"
+  },
+  "about_s": {
+    "title": "About me",
+    "constant": "Constantly changing",
+    "intro1": "I'm a recent grad with a degree in Computer Science & Engineering and International Studies from Korea University. My journey as a web developer began at NODAMEN, where I was responsible for the development, optimization, and bug fixing of web services. These web services showcased digital exhibitions curated by staff, allowing users to enjoy 4K digital artworks on PCs, mobile devices, and TVs.",
+    "intro2": "I was also a Flutter developer responsible for developing web admin page for the content curation on mobile application, as well as development, optimizing & bug fixing of the mobile application.",
+    "intro3": "My goal is to continually expand my abilities in front-end development and create impactful user experiences. You can see the projects I've worked on in the \"Projects\" section!"
+  },
+  "info": {
+    "title": "Finally, some quick bits about me.",
+    "one": "B.E. in Computer Science & Engineering",
+    "two": "FC Barcelona fan since 2013",
+    "three": "Double Majored in International Studies",
+    "four": "Video games lover"
   }
 }
