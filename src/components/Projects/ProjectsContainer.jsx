@@ -6,7 +6,7 @@ import { ExternalLink } from "lucide-react";
 export default function ProjectsContainer({ project, layout }) {
   const { name, description, url, previewImage, technologies } = project;
   return (
-    <Card className="mx-auto flex max-w-6xl flex-col md:w-[70%] md:flex-row">
+    <Card className="mx-auto flex max-w-6xl flex-col md:w-[85%] md:flex-row">
       {/* Image container */}
       <div
         className={

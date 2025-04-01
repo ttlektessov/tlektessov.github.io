@@ -15,7 +15,7 @@
   },
   "about_s": {
     "title": "About me",
-    "constant": "Constantly changing",
+    "constant": "Resilience and curiosity",
     "intro1": "I'm a recent grad with a degree in Computer Science & Engineering and International Studies from Korea University. My journey as a web developer began at NODAMEN, where I was responsible for the development, optimization, and bug fixing of web services. These web services showcased digital exhibitions curated by staff, allowing users to enjoy 4K digital artworks on PCs, mobile devices, and TVs.",
     "intro2": "I was also a Flutter developer responsible for developing web admin page for the content curation on mobile application, as well as development, optimizing & bug fixing of the mobile application.",
     "intro3": "My goal is to continually expand my abilities in front-end development and create impactful user experiences. You can see the projects I've worked on in the \"Projects\" section!"
@@ -77,7 +77,7 @@
       "Figma"
     ],
     "mindsight_name": "Mindsight: Meditation & Sleep",
-    "mindsight_description": "Mobile application for mental healthcare combined with artworks and more.",
+    "mindsight_description": "Mental health app that integrates with offline meditation projects. Users can periodically input and then assess their emotions and psychological states, providing insights through graphs. Based on this analysis, the AI recommends personalized meditation content from a library of over 5,000 resources tailored to 21 different emotional states.",
     "mindsight_url": "https://youtu.be/HLyOmjkndec",
     "mindsight_technologies": ["Flutter", "Dart", "GetX", "Git", "Figma"],
     "mindsight_admin_name": "Mindsight Admin Panel",
