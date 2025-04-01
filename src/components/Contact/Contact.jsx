@@ -5,10 +5,13 @@ import IconButton from "../General/IconButton";
 import useWindowSize from "../Hooks/use-windows-size";
 import { useState } from "react";
 import SocialIcons from "../General/SocialIcons";
+import { useTranslation } from "react-i18next";
 
 let email = "ttlektessov@gmail.com";
 
+// eslint-disable-next-line react/prop-types
 export default function Contact({ darkMode }) {
+  const { t } = useTranslation();
   const width = useWindowSize();
   const [isCopied, setIsCopied] = useState(false);
   const handleCopyClick = (text) => {
@@ -23,7 +26,7 @@ export default function Contact({ darkMode }) {
       <Container id="contact" className="bg-gray-50">
         <div className="flex flex-col items-center gap-4">
           <div className="self-cent">
-            <SectionTag label="Get in Touch" />
+            <SectionTag label={t("contact_s.title")} />
           </div>
         </div>
         <div className="flex flex-col items-center gap-6 md:gap-12">
@@ -45,7 +48,7 @@ export default function Contact({ darkMode }) {
             </div>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <p className="body3 text-center">You can also find me here!</p>
+            <p className="body3 text-center">{t("contact_s.social")}</p>
             <SocialIcons />
           </div>
         </div>

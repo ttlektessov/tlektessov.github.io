@@ -1,6 +1,6 @@
 import Card from "../General/Card";
 import { useTranslation } from "react-i18next";
-// import { useState } from "react";
+
 export default function ExperienceContainer() {
   const { i18n, t } = useTranslation();
   const lang = i18n.language || "en-US";

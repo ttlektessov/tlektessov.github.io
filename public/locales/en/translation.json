@@ -58,5 +58,36 @@
       "Updated weekly labs for 30 students (8 Labs in total)",
       "Planned and supervised midterm, final, and qualification exams, ensuring smooth execution and adherence to academic standards, resulting in a 15% improvement in student performance."
     ]
-  }
+  },
+  "projects_s": {
+    "title": "Work",
+    "intro": "Some of the projects I worked on:",
+    "patron_name": "Patron Website",
+    "patron_description": "A platform for digital exhibitions curated by Nodamen's staff, allowing users to enjoy 4K digital artworks on PC, mobile and TV.",
+    "patron_url": "https://youtu.be/aoQ_UkyYj5c",
+    "patron_technologies": [
+      "HTML",
+      "JS",
+      "SCSS",
+      "Postman",
+      "PostgreSQL",
+      "JQuery",
+      "QC\\QA",
+      "Git",
+      "Figma"
+    ],
+    "mindsight_name": "Mindsight: Meditation & Sleep",
+    "mindsight_description": "Mobile application for mental healthcare combined with artworks and more.",
+    "mindsight_url": "https://youtu.be/HLyOmjkndec",
+    "mindsight_technologies": ["Flutter", "Dart", "GetX", "Git", "Figma"],
+    "mindsight_admin_name": "Mindsight Admin Panel",
+    "mindsight_admin_description": "Admin panel for the Mindsight app, allowing the staff to manage users, content, and more.",
+    "mindsight_admin_url": "https://youtu.be/S3Iaz10erTA",
+    "mindsight_admin_technologies": ["Flutter", "Dart", "GetX", "Git", "Figma"]
+  },
+  "contact_s": {
+    "title": "Get in Touch",
+    "social": "You can also find me here!"
+  },
+  "footer_text": "Yep, done by me, Temirlan Tlektessov."
 }
