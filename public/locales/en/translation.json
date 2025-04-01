@@ -33,7 +33,30 @@
   },
   "experience_s": {
     "title": "Experience",
-    "intro": "Here is a quick summary of my most recent experiences:",
-    "south_korea": "Seoul, South Korea"
+    "intro": "Here is a quick summary of my most recent experiences:"
+  },
+  "south_korea": "Seoul, South Korea",
+  "org": {
+    "nodamen_title": "NODAMEN",
+    "nodamen_position": "Frontend & Mobile Developer",
+    "nodamen_summary": [
+      "Developed membership, personalized content, and personal pages using HTML, CSS, JS, and jQuery, improving overall website functionality and user engagement by over 30%.",
+      "Successfully integrated RESTful APIs into the front-end, enabling dynamic content delivery and realtime updates for membership subscriptions and personalized content.",
+      "Collaborated with the QC/QA team to identify and fix front-end bugs, ensuring a seamless user experience and reducing error rates by 54%.",
+      "Developed a responsive and dynamic admin page using Flutter, implementing efficient user interfaces and robust back-end integration to manage administrative tasks seamlessly"
+    ],
+    "embassy_title": "Embassy of Kazakhstan in Korea",
+    "embassy_position": "IT Support",
+    "embassy_summary": [
+      "Provided diagnostics and maintenance for personnel electronic devices, and assisted in the digitization of embassy services, enhancing operational efficiency and user accessibility",
+      "Developed a Telegram bot that enabled users to communicate and receive support from the embassy, facilitating over 200 user interactions each month and improving response times by 35%."
+    ],
+    "sejong_title": "Sejong University",
+    "sejong_position": "Teaching Assistant",
+    "sejong_summary": [
+      "Provided teaching assistance for the Advanced C Programming course, supporting the instructor and enhancing student understanding and performance.",
+      "Updated weekly labs for 30 students (8 Labs in total)",
+      "Planned and supervised midterm, final, and qualification exams, ensuring smooth execution and adherence to academic standards, resulting in a 15% improvement in student performance."
+    ]
   }
 }
