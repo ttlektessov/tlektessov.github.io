@@ -7,22 +7,25 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Skills from "./components/Skills/Skills";
 import { DarkModeProvider } from "./components/context/DarkModeContext";
+import { ReactLenis } from "lenis/react";
 
 function App() {
   return (
     <>
-      <DarkModeProvider>
-        <Header />
-        <main>
-          <Profile />
-          <About />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Contact />
-        </main>
-        <Footer />
-      </DarkModeProvider>
+      <ReactLenis root>
+        <DarkModeProvider>
+          <Header />
+          <main>
+            <Profile />
+            <About />
+            <Skills />
+            <Experience />
+            <Projects />
+            <Contact />
+          </main>
+          <Footer />
+        </DarkModeProvider>
+      </ReactLenis>
     </>
   );
 }
